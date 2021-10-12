@@ -9,7 +9,7 @@
   <meta name="author" content="Indra Styawantoro">
 
   <!-- Title -->
-  <title>Aplikasi Antrian Berbasis Web</title>
+  <title>Antrian Online Klinik Hewan Kucing</title>
 
   <!-- Favicon icon -->
   <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
@@ -77,13 +77,13 @@
   <script type="text/javascript">
     $(document).ready(function() {
       // tampilkan jumlah antrian
-      $('#antrian').load('get_antrian.php');
+      $('#antrian').load('get_antrian.blade.php');
 
       // proses insert data
       $('#insert').on('click', function() {
         $.ajax({
           type: 'POST',                     // mengirim data dengan method POST
-          url: 'insert.php',                // url file proses insert data
+          url: 'insert.blade.php',                // url file proses insert data
           success: function(result) {       // ketika proses insert data selesai
             // jika berhasil
             if (result === 'Sukses') {

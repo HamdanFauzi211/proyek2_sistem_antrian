@@ -93,10 +93,9 @@
 						<div class="user-header">
 							<div class="avatar avatar-sm"> <img src="assets/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle"> </div>
 							<div class="user-text">
-								<h6>Soeng Souy</h6>
-								<p class="text-muted mb-0">Administrator</p>
+								<h6>{{ Auth::user()->name }}</h6>
 							</div>
-						</div> <a class="dropdown-item" href="profile.html">My Profile</a> <a class="dropdown-item" href="settings.html">Account Settings</a> <a class="dropdown-item" href="login.html">Logout</a> </div>
+						</div> <a class="dropdown-item" href="profile.html">My Profile</a> <a class="dropdown-item" href="settings.html">Account Settings</a> <a class="dropdown-item" href="{{ route('logout') }}">Logout</a> </div>
 				</li>
 			</ul>
 
@@ -108,11 +107,9 @@
 						<li class="active"> <a href="index.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a> </li>
 						<li class="list-divider"></li>
 
-						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Customers </span> <span class="menu-arrow"></span></a>
+						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Pasien </span> <span class="menu-arrow"></span></a>
 							<ul class="submenu_class" style="display: none;">
-								<li><a href="all-customer.html"> All customers </a></li>
-								<li><a href="edit-customer.html"> Edit Customer </a></li>
-								<li><a href="add-customer.html"> Add Customer </a></li>
+								<li><a href="#link crud"> Semua Pasien </a></li>
 							</ul>
 						</li>
 
@@ -120,7 +117,7 @@
 							<ul class="submenu_class" style="display: none;">
 
                             <!-- crud pasien taruh disini yaaaaaaaaaaaaaaaaaaaaaaaa -->
-								<li><a href="employees.html">List Antrian </a></li>
+								<li><a href="panggil">List Antrian </a></li>
 							</ul>
 						</li>
 						
