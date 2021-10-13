@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pengguna;
 use Illuminate\Http\Request;
 
 class dasboardadminController extends Controller
@@ -10,4 +11,5 @@ class dasboardadminController extends Controller
     {
         return view('dashboardadmin');
     }
+
 }

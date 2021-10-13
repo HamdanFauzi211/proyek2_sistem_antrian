@@ -33,17 +33,18 @@
 <body class="d-flex flex-column h-100">
   <main class="flex-shrink-0">
     <div class="container pt-4">
+      
       <div class="d-flex flex-column flex-md-row px-4 py-3 mb-4 bg-white rounded-2 shadow-sm">
         <!-- judul halaman -->
         <div class="d-flex align-items-center me-md-auto">
           <i class="bi-mic-fill text-success me-3 fs-3"></i>
-          <h1 class="h5 pt-2">Panggilan Antrian</h1>
+          <h1 class="h5 pt-2">Klinik Hewan Kucing > Panggilan Antrian</h1>
         </div>
         <!-- breadcrumbs -->
         <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="http://www.indrasatya.com/"><i class="bi-house-fill text-success"></i></a></li>
+              <li class="breadcrumb-item"><a href=""><i class="bi-house-fill text-success"></i></a></li>
               <li class="breadcrumb-item" aria-current="page">Dashboard</li>
               <li class="breadcrumb-item" aria-current="page">Antrian</li>
             </ol>
@@ -60,16 +61,25 @@
               <thead>
                 <tr>
                   <th>Nomor Antrian</th>
+                  <th>Nama</th>
+                  <th>Email</th>
                   <th>Keluhan</th>
-                  <th>Panggil</th>
+                  <th>Alamat</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               @foreach ($pengguna as $pengguna)
                 <tr>
                   <th>{{ $pengguna -> id }}</th>
+                  <th>{{ $pengguna -> name }}</th>
+                  <th>{{ $pengguna -> email }}</th>
                   <th>{{ $pengguna -> keluhan }}</th>
+                  <th>{{ $pengguna -> alamat }}</th>
+                  <th><a class="btn btn-primary" href="">Layani</a> </th>
                 </tr>
               @endforeach
+              <ul> <a class="btn btn-primary" href="dashboard">Kembali</a> </ul>
+              
             </table>
           </div>
         </div>

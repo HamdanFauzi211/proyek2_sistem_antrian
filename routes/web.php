@@ -27,6 +27,7 @@ Route::get('nomor-antrian', 'App\Http\Controllers\AntrianController@index');
 Route::get('ambilantrian', 'App\Http\Controllers\AntrianController@getAntrian');
 
 Route::get('panggil', 'App\Http\Controllers\PanggilAntrianController@index');
+Route::delete('layani{id}','App\Http\Controllers\PanggilAntrianController@delete' );
 
 Route::group(['middleware' => 'auth'], function () {
  

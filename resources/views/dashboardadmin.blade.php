@@ -13,6 +13,7 @@
 	<link rel="stylehseet" href="https://cdn.oesmith.co.uk/morris-0.5.1.css">
 	<link rel="stylesheet" href="assets/plugins/morris/morris.css">
 	<link rel="stylesheet" href="assets/css/style.css"> </head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
 
 <body>
 	<div class="main-wrapper">
@@ -106,13 +107,6 @@
 					<ul>
 						<li class="active"> <a href="index.html"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a> </li>
 						<li class="list-divider"></li>
-
-						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Pasien </span> <span class="menu-arrow"></span></a>
-							<ul class="submenu_class" style="display: none;">
-								<li><a href="#link crud"> Semua Pasien </a></li>
-							</ul>
-						</li>
-
 						<li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Antrian Pasien </span> <span class="menu-arrow"></span></a>
 							<ul class="submenu_class" style="display: none;">
 
@@ -134,7 +128,7 @@
 				<div class="page-header">
 					<div class="row">
 						<div class="col-sm-12 mt-5">
-							<h3 class="page-title mt-3">Selamat Datang Di Klink Hewan</h3>
+							<h3 class="page-title mt-3">Selamat Datang Di Klink Hewan Kucing</h3>
 							<ul class="breadcrumb">
 								<li class="breadcrumb-item active">Dashboard</li>
 							</ul>
@@ -169,41 +163,6 @@
 									<div class="ml-auto mt-md-3 mt-lg-0"> <span class="opacity-7 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="#009688" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign">
 									<line x1="12" y1="1" x2="12" y2="23"></line>
 									<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-									</svg></span> </div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-sm-6 col-12">
-						<div class="card board1 fill">
-							<div class="card-body">
-								<div class="dash-widget-header">
-									<div>
-										<h3 class="card_widget_header">1538</h3>
-										<h6 class="text-muted">Enquiry</h6> </div>
-									<div class="ml-auto mt-md-3 mt-lg-0"> <span class="opacity-7 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="#009688" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-plus">
-									<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
-									</path>
-									<polyline points="14 2 14 8 20 8"></polyline>
-									<line x1="12" y1="18" x2="12" y2="12"></line>
-									<line x1="9" y1="15" x2="15" y2="15"></line>
-									</svg></span> </div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-sm-6 col-12">
-						<div class="card board1 fill">
-							<div class="card-body">
-								<div class="dash-widget-header">
-									<div>
-										<h3 class="card_widget_header">364</h3>
-										<h6 class="text-muted">Collections</h6> </div>
-									<div class="ml-auto mt-md-3 mt-lg-0"> <span class="opacity-7 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="#009688" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
-									<circle cx="12" cy="12" r="10"></circle>
-									<line x1="2" y1="12" x2="22" y2="12"></line>
-									<path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-									</path>
 									</svg></span> </div>
 								</div>
 							</div>

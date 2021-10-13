@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="col-md-12 mt-5">
             <div class="card">
                 <div class="card-header">
-                    <h3>Dashboard</h3>
+                    <h3>Dashboard Klinik Hewan Kucing</h3>
+                    <h6>Daftar Antrian</h6>
                 </div>
 
                 @foreach($pengguna as $pengguna)
                 <div class="card-body">
                     <h5>Selamat datang di halaman dashboard antrian,</h5>
-                    <h5>Nomor Antrian anda adalah <strong>{{ $pengguna -> id}}</strong></h5>
-                    <a href="{{ route('logout') }}" class="btn btn-danger">Keluar</a>
-                    <a href="nomor-antrian" class="btn btn-success">Lanjut Halaman Antrian</button></a>
+                    <h5>Nomor Antrian {{ $pengguna -> name }} adalah <strong>{{ $pengguna -> id}}</strong></h5>
                 </div>
                 @endforeach
+                <a href="{{ route('logout') }}" class="btn btn-danger">Keluar</a>
             </div>
         </div>
     </div>
