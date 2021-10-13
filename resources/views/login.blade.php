@@ -13,6 +13,7 @@
             <div class="card">
                 <div class="card-header">
                     <h3 class="text-center">Form Login Admin</h3>
+                    <h6 class="text-center">Klinik Kucing Online</h6>
                 </div>
                 <form action="{{ route('login') }}" method="post">
                 @csrf
@@ -52,7 +53,7 @@
                 <div class="card-footer">
                     <button type="submit" class="btn btn-primary btn-block">Log In</button>
                     <p class="text-center">Belum punya akun? <a href="{{ route('register') }}">Register</a> sekarang!</p>
-                    <p class="text-center">Login sebagai User <a href="{{ route('login') }}">Login</a> sekarang!</p>
+                    <p class="text-center">Login sebagai User? <a href="{{ route('loginuser') }}">Login</a> sekarang!</p>
                 </div>
                 </form>
             </div>
