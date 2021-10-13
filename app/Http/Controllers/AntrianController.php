@@ -34,6 +34,6 @@ class AntrianController extends Controller
             // tampilkan data
             echo number_format($jumlah_antrian, 0, '', '.');
           }
-          return view('nomor-antrian.index');
+          return view('nomor-antrian.get_antrian');
     }
 }

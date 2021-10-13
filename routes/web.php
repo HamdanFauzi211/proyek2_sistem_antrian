@@ -19,6 +19,7 @@ Route::get('loginuser', [AuthControllerUser::class, 'showFormLoginuser'])->name(
 Route::post('loginuser', [AuthControllerUser::class, 'loginuser']);
 Route::get('registeruser', [AuthControllerUser::class, 'showFormRegisteruser'])->name('registeruser');
 Route::post('registeruser', [AuthControllerUser::class, 'registeruser']);
+Route::get('homeuser', [HomeController::class, 'tampil'])->name('homeuser');
 
 
 // Route Antrian

@@ -123,7 +123,7 @@ class AuthControllerUser extends Controller
   
         if($simpan){
             Session::flash('success', 'Register berhasil! Silahkan login untuk mengakses data');
-            return redirect()->route('loginuser');
+            return redirect()->route('homeuser');
         } else {
             Session::flash('errors', ['' => 'Register gagal! Silahkan ulangi beberapa saat lagi']);
             return redirect()->route('registeruser');
