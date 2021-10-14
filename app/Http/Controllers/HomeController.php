@@ -17,6 +17,11 @@ class HomeController extends Controller
         return view('landingpage');
     }
 
+    public function lihatantrian()
+    {
+        $pengguna = Pengguna::all();
+        return view('lihatantrian', compact('pengguna'));
+    }
     public function tampil()
     {
         // $pengguna = Pengguna::where('id')->first();

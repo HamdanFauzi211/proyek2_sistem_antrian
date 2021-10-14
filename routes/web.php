@@ -8,6 +8,8 @@ use App\Http\Controllers\HomeController;
 
 //ROUTE TEMPILAN AWAL
 Route::get('/', [App\Http\Controllers\HomeController::class, 'landingpage'])->name('landingpage');
+Route::get('/landingpage', [App\Http\Controllers\HomeController::class, 'landingpage'])->name('landingpage');
+Route::get('/lihatantrian', [App\Http\Controllers\HomeController::class, 'lihatantrian'])->name('lihatantrian');
 //Route admin
 
 // Route::get('/', [AuthController::class, 'showFormLogin'])->name('login');

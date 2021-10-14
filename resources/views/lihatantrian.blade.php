@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-header">
                     <h3>Dashboard Klinik Hewan Kucing</h3>
-                    <h6>Daftar Antrian</h6>
+                    <h6>Lihat Antrian</h6>
                 </div>
 
                 @foreach($pengguna as $pengguna)
@@ -24,7 +24,7 @@
                     <h5>Nomor Antrian {{ $pengguna -> name }} adalah <strong>{{ $pengguna -> id}}</strong></h5>
                 </div>
                 @endforeach
-                <a href="{{ route('lihatantrian') }}" class="btn btn-danger">Keluar</a>
+                <a href="{{ route('landingpage') }}" class="btn btn-danger">Kembali</a>
             </div>
         </div>
     </div>

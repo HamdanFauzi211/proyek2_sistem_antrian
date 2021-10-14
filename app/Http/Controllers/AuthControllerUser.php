@@ -133,8 +133,6 @@ class AuthControllerUser extends Controller
     public function logout()
     {
         Auth::logout(); // menghapus session yang aktif
-        return redirect()->route('loginuser');
+        return redirect()->route('landingpage');
     }
-  
-  
 }
