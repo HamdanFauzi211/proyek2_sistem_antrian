@@ -5,8 +5,12 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AuthControllerUser;
 use App\Http\Controllers\HomeController;
 
+
+//ROUTE TEMPILAN AWAL
+Route::get('/', [App\Http\Controllers\HomeController::class, 'landingpage'])->name('landingpage');
 //Route admin
-Route::get('/', [AuthController::class, 'showFormLogin'])->name('login');
+
+// Route::get('/', [AuthController::class, 'showFormLogin'])->name('login');
 Route::get('login', [AuthController::class, 'showFormLogin'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
 Route::get('register', [AuthController::class, 'showFormRegister'])->name('register');

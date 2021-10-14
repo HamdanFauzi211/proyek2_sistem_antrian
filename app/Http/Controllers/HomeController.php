@@ -12,6 +12,11 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function landingpage()
+    {
+        return view('landingpage');
+    }
+
     public function tampil()
     {
         // $pengguna = Pengguna::where('id')->first();
